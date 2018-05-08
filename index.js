@@ -2,7 +2,7 @@
 
 function takeANumber(line, name){
   line.push(name)
-  return "Welcome, " + name + ". You are number " + parseInt(line.indexOf(name) + 1) + " in line."
+  return "Welcome, " + name + ". You are number " + line.indexOf(name) + 1 + " in line."
 }
 takeANumber(katzDeli, "Steven")
 takeANumber(katzDeli, "Blake")
