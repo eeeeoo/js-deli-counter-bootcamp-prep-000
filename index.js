@@ -11,9 +11,10 @@ takeANumber(katzDeli, "Avi")
 function nowServing(line){
   if (line.length === 0) {
     return "There is nobody waiting to be served!"
-  } else {
-    return "Currently serving " + line.shift() + "."
-  }
+  // } else {
+  //   return "Currently serving " + line.shift() + "."
+  // }
+  return "Currently serving " + line.shift() + "."
 }
 
 nowServing(katzDeli)
@@ -21,8 +22,8 @@ function currentLine(line){
   if (line.length === 0) {
     return "The line is currently empty."
   }
-  var lineOrder = [];
-  for (var i = 0; i < line.length; i++){
+  const lineOrder = [];
+  for (let i = 0; i < line.length; i++){
       lineOrder.push(" " + [i+1] + ". " + line[i])
   }
   return "The line is currently:" + lineOrder
